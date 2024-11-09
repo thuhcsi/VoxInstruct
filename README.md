@@ -47,9 +47,9 @@ You can try other cfg value for better performance.
 
 
 ## Future Work
-[] provide a more detailed README file (sorry for the time constraints)
-[] release training scripts
-[] train the model with more data (speech, music, sound, ...) 
+- [ ] provide a more detailed README file (sorry for the time constraints)
+- [ ] release training scripts (or you can refer to train_ar.py and meta_files now)
+- [ ] train the model with more data, e.g., speech, music, sound, ...
 
 ## License
 

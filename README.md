@@ -1,7 +1,7 @@
 
 # VoxInstruct: Expressive Human Instruction-to-Speech Generation with Unified Multilingual Codec Language Modelling
 
-This is the official PyTorch implementation of **"[VoxInstruct: Expressive Human Instruction-to-Speech Generation with Unified Multilingual Codec Language Modelling](https://dl.acm.org/doi/10.1145/3664647.3681680)", accepted by ACM MM2024 as Oral.
+This is the official PyTorch implementation of **"[VoxInstruct: Expressive Human Instruction-to-Speech Generation with Unified Multilingual Codec Language Modelling](https://dl.acm.org/doi/10.1145/3664647.3681680)"**, accepted by ACM MM2024 as Oral.
 
 Demopage is available at: [VoxInstruct Demo](https://voxinstruct.github.io/VoxInstruct/) 
 
@@ -18,7 +18,7 @@ pip install torch==2.3.0 torchvision==0.18.0 torchaudio==2.3.0 --index-url https
 pip install -r requirements.txt
 ```
 
-Due to storage limitations, we have saved the model checkpoints on Google Drive at https://drive.google.com/drive/folders/1LoVAnMiwAq4X-OI0U2UQJsIEs7G6o0L0?usp=drive_link. 
+Due to storage limitations, we have saved the model checkpoints on Google Drive at https://drive.google.com/drive/folders/1LoVAnMiwAq4X-OI0U2UQJsIEs7G6o0L0?usp=sharing. 
 
 You can download the models and save them in the `pretrained` folder.
 
@@ -45,6 +45,11 @@ CUDA_VISIBLE_DEVICES=0 python3 inference.py \
 ```
 You can try other cfg value for better performance.
 
+
+## Future Work
+[] provide a more detailed README file (sorry for the time constraints)
+[] release training scripts
+[] train the model with more data (speech, music, sound, ...) 
 
 ## License
 

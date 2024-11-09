@@ -25,9 +25,18 @@ You can download the models and save them in the `pretrained` folder.
 
 ## Inference
 
-To run inference, use the following command in `infer.sh` and input your instructions at the `examples/example_instructions.txt`.
+To run inference, firstly input your instructions at the `examples/example_instructions.txt`.
+Each line in the file represents a sample to be generated: <sample_name>|<lang_id>|<instruction>|<speech_prompt_path>. 
+<lang_id> indicates the pronunciation tendency of the synthesized speech (0 represents English, 1 represents Chinese). 
+When using a speech prompt, you must specify the <speech_prompt_path> and provide the prompt text in the instruction. 
 
+```
+0001|1|语调中带着嫌弃不满的情绪，彰显出说话着极度抱怨的情感，“不用别人点她自己就炸了，你说你也是的，干吗要介绍一个这么花花公子的人给小萍啊？”|
+......
+0012|1|“**下面唱的这是西河大鼓，西河大鼓发源于河北省河间地带**。欢迎大家使用 VoxInstruct 模型进行指令到语音生成。”|./examples/actor_ref.wav
+```
 
+Secondly, use the following command in `infer.sh`: 
 ```bash
 CUDA_VISIBLE_DEVICES=0 python3 inference.py \
     --ar_config ./configs/train_ar.yaml \

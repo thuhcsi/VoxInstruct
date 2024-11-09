@@ -1,0 +1,12 @@
+0001|1|语调中带着嫌弃不满的情绪，彰显出说话着极度抱怨的情感，“不用别人点她自己就炸了，你说你也是的，干吗要介绍一个这么花花公子的人给小萍啊？”|
+0002|1|话语带有一种诧异的心情，还有一点质疑的态度，夹杂着不满，“她你也要请啊。”|
+0003|1|语调高昂，声音宏亮，内心非常愤慨：“学长今天还说他喜欢我呢。你不珍惜我，我就跟别人跑了。”|
+0004|1|A thirties man speaks angerly with medium pitch and low volume. “因为他要做一个很长很长的梦。”|
+0005|0|A man with a normal voice to say: "Fire a whole platoon, Major."|
+0006|0|a low pitched female voice, "Delaney had read one or two works on psychic phenomena and understood from them that spirit projection was not only quite feasible but far from uncommon."|
+0007|0|以中年男性的声音，声音中充满沉思，带有递进的情绪，较为亲切却又略有些坚定，"To be or not to be, that is the question."|
+0008|0|a high pitched woman voice speaks happily, "Delaney had read one or two works on psychic phenomena and understood from them that spirit projection was not only quite feasible but far from uncommon."|
+0009|1|男声以较低的音高，较低的音量，充满喜悦并感到深刻的幸福，表现得非常亲切与满足，“I have a dream, 世界会更好。”|
+0010|0|“Donald Trump thinks he's making America great again. ”一个老年男主持人在电视上轻松愉快地调侃道，语速较慢，表现出震惊的情绪。|
+0011|1|An old female is performing excitedly on a talk show, “中国有句古话，叫做识时务者为俊杰，但我不能理解是什么意思。”, speaking at a rapid pace.|
+0012|1|“下面唱的这是西河大鼓，西河大鼓发源于河北省河间地带。欢迎大家使用 VoxInstruct 模型进行指令到语音生成。”|./examples/actor_ref.wav

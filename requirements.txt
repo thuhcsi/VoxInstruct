@@ -1,0 +1,17 @@
+fairseq
+encodec
+transformers
+peft
+matplotlib
+scipy
+joblib
+vocos
+flash-attn
+sentencepiece
+protobuf
+scikit-learn
+
+
+
+
+

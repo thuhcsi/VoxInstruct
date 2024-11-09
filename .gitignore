@@ -1,0 +1,9 @@
+results*
+pretrained/
+eval/
+exps/
+examples_other/
+configs_internal/
+start.sh
+.DS_Store
+__pycache__

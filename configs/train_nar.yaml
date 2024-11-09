@@ -1,0 +1,62 @@
+hparams:
+    # training setting
+    name: "VoxInstructAR"
+    opt_type: 'AdamW'
+    learning_rate: 0.01  
+    weight_decay: 0.1
+    max_step: 2000000  # 2M steps
+    grad_accum_every: 2
+    max_grad_norm: 5
+    warmup_step: 10000
+    ckpt_step: 50000
+    log_step: 10
+    val_step: -1 # [todo] not support 
+    batch_size: 8
+    num_workers: 4
+
+    # 
+    lang_num: 2
+    lang_mapping: {"en": 0, "zh": 1}
+    st_token_num: 500
+    at_token_num: 1024
+    at_res_num: 8
+    bos_id: 1527 # st+at+lang+1
+    eos_id: 1528 # st+at+lang+2, N is st eos & N+1 is at eos
+  
+
+    # classifier-free guidance, for training, use mask ratio strategy
+    text_free_g_ratio: 0.25
+    description_free_g_ratio: 0.1
+    at_free_g_ratio: 0.3
+    mask_strategy: "cosine" # cosine or full
+    without_st: False
+
+    # dataset setting
+    train_path: [
+        '/zhangpai21/workspace/THU-TTS/data/gigaspeech/metadata_train.json', 
+        '/zhangpai21/workspace/THU-TTS/data/wenetspeech/metadata_train.json',  
+    ]
+    # not support now
+    val_path: [
+        '/zhangpai21/workspace/THU-TTS/zhouyx/data/db-para/metadata_test.json',
+    ]
+
+    # model
+    hubert_path: "./pretrained/hubert-base-checkpoint"
+    encodec_path: "./pretrained/encodec-checkpoint"
+    vocos_path: "./pretrained/vocos-encodec-24khz"
+    mt5_path: "./pretrained/google-mt5-base-checkpoint"
+    mt5_out_dim: 768  
+    apply_lora: True
+    lora_r: 16
+    lora_alpha: 16
+    max_text_len: 512
+    max_len: 2048
+    num_layers: 12
+    num_heads: 16 
+    hidden_dim: 1024 
+    num_attn_head_dim: 64
+    ffn_inner_dim: 4096
+    ffn_act_func: 'silu'
+    attn_dropout_p: 0.1
+

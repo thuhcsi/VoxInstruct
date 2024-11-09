@@ -27,7 +27,8 @@ You can download the models and save them in the `pretrained` folder.
 
 To run inference, firstly input your instructions at the `examples/example_instructions.txt`.
 
-Each line in the file represents a sample to be generated, with the format as **<sample_name>|<lang_id>|<instruction>|<speech_prompt_path>**.  
+Each line in the file represents a sample to be generated, with the format as: <sample_name>|<lang_id>|<instruction_text>|<speech_prompt_path>.  
+
 <lang_id> indicates the pronunciation tendency of the synthesized speech (0 represents English, 1 represents Chinese). 
 When using a speech prompt, the **transcript** of the speech prompt should be included in the content part of the instruction. 
 

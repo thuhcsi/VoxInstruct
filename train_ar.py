@@ -145,7 +145,7 @@ class ARModelTrainer(nn.Module):
     def load(self, path):
         path = Path(path)
         assert path is not None
-        ckpt = torch.load(str(path), map_location='cpu')
+        ckpt = torch.load(str(path), map_location='cpu', weights_only=True)
 
         model = self.accelerator.unwrap_model(self.model)
         model.load_state_dict(ckpt['model'])
